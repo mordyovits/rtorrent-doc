@@ -122,7 +122,7 @@ The main view window lists all loaded torrents with respective status info. Exam
 *
 ```
 
-###Torrent info line explanation###
+### Torrent info line explanation ###
 
 **Torrent:  161.6 /  617.2 MB**  
      Amount of downloaded data / total size of torrent.
@@ -160,7 +160,7 @@ Example of the status bar:
 Throttle U/D: 200/off  Rate: 141.6 /   0.0 KiB  Listen:<default>:xxxxx  Bind: xxx.xxx.xxx.xxx  [U 3/14] [D 15/0] [H 1/32] [S 6/40/768] [F 4/128]
 ```
 
-###Bottom line explanation###
+### Bottom line explanation ###
 
 **Throttle U/D: 200/off**  
 These are the current speed settings.  
@@ -211,7 +211,7 @@ Example entry:
 ```
 
 
-###Explanation###
+### Explanation ###
 
 **IP**  
      The IP address of the peer. (Which, of course, has nothing to do with DNS)
@@ -226,7 +226,7 @@ Example entry:
      The download rate (KiB/sec) of this peer for this torrent (reported to your client by the peer client).
 
 **C/RE/LO**  
-C  = Connection type, can be r, l, R or L.
+C  = Connection type, can be r, l, R or L.  
 &nbsp;&nbsp;&nbsp;&nbsp;r = Started remotely, the peer initiated the connection to your client.  
 &nbsp;&nbsp;&nbsp;&nbsp;l = Started locally, your client initiated the connection to the peer.  
 &nbsp;&nbsp;&nbsp;&nbsp;R = Started remotely, using encrypted data transfer.  
@@ -236,8 +236,9 @@ RE = Remote client information, has two parts; the first is u or c and the secon
 &nbsp;&nbsp;&nbsp;&nbsp;c = This peer has choked your client (which means it is not going to send you any pieces for now).  
 &nbsp;&nbsp;&nbsp;&nbsp;u = Your client is not choked by this peer (unchoked).  
 &nbsp;&nbsp;&nbsp;&nbsp;i = This peer is interested in downloading from your client.  
-&nbsp;&nbsp;&nbsp;&nbsp;n = This peer is not interested in downloading from your client.  
-&nbsp;&nbsp;&nbsp;&nbsp;LO = Local client information, has two parts; the first is u or c and the second is i or n.  
+&nbsp;&nbsp;&nbsp;&nbsp;n = This peer is not interested in downloading from your client.
+
+LO = Local client information, has two parts; the first is u or c and the second is i or n.  
 &nbsp;&nbsp;&nbsp;&nbsp;c = Your client has choked this peer (which means it is not going to send this peer any pieces for now).  
 &nbsp;&nbsp;&nbsp;&nbsp;u = Your client is not choking the peer (unchoked).  
 &nbsp;&nbsp;&nbsp;&nbsp;i = Your client is interested in downloading from this peer.  
@@ -257,7 +258,7 @@ The number of the piece that is currently on the top of the request queue.
 **SNUB**  
 This field has a * in it when your client is snubbing this peer. When a peer agrees to send you a piece you have requested and then does not send that piece within a certain time your client will snub this peer. It is basically a way for the client to flag that this peer is unreliable and it is better to request pieces from other clients.
 
-###Status###
+### Status ###
 
 A status line in this screen lists information such as:
 ```
